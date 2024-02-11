@@ -87,9 +87,37 @@
         <span>Send</span>
     </button>
 </form>
+<!-- Add this success message element in your HTML -->
+<div id="success-message" style="display: none;">
+    <h2>Form submitted successfully!</h2>
+</div>
 <footer>
     <p>J. Dobrev</p>
     <p>Amsterdam, Netherlands</p>
 </footer>
+<script>document.querySelector('.pageclip-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Get form data
+    var formData = new FormData(event.target);
+
+    // Send form data to the server
+    fetch(event.target.action, {
+        method: 'POST',
+        body: formData
+    })
+        .then(function(response) {
+            if (response.ok) {
+                // If the server responds with a success status, hide the form and show the success message
+                document.querySelector('.pageclip-form').style.display = 'none';
+                document.getElementById('success-message').style.display = 'block';
+            } else {
+                throw new Error('Form submission failed');
+            }
+        })
+        .catch(function(error) {
+            console.error('Error:', error);
+        });});
+</script>
 </body>
 </html>
