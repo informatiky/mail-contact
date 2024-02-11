@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin for mail.server-network.org</title>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+
+        .pageclip-form {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .pageclip-form input[type="text"],
+        .pageclip-form input[type="email"],
+        .pageclip-form textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .pageclip-form__submit {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .pageclip-form__submit:hover {
+            background-color: #45a049;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            margin-top: auto;
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #e9ecef;
+            color: #6c757d;
+            font-size: 0.875em;
+        }
+    </style>
+</head>
+<body>
+<h1>Mail admin for mail.server-network.org</h1>
+<form action="https://send.pageclip.co/fsD9GlKgwr8EyWJDPO39nC5K2QQl7uQZ/Mail-contact" class="pageclip-form" method="post">
+    <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
+
+    <!-- It looks like you are creating a contact form. These email and subject fields are special -->
+    <!-- See https://pageclip.co/docs#special-fields for more info -->
+    <input type="email" name="email" placeholder="you@example.com" required/>
+    <input type="text" name="subject" placeholder="Subject" required/>
+    <input type="text" name="name" placeholder="Your Name" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <input type="text" name="domain" placeholder="Email domain: ex. server-network.org" required />
+    <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+    <button type="submit" class="pageclip-form__submit">
+        <span>Send</span>
+    </button>
+</form>
+<footer>
+    <p>J. Dobrev</p>
+    <p>Amsterdam, Netherlands</p>
+</footer>
+</body>
+</html>
